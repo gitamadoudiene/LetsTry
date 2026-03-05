@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercice 4 – Liste de tâches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 Ma Liste de Tâches</h1>
+
+    <form id="todo-form">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Ajouter une nouvelle tâche..."
+        maxlength="100"
+        required
+      />
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Toutes</button>
+      <button class="filter-btn" data-filter="active">À faire</button>
+      <button class="filter-btn" data-filter="completed">Terminées</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <div class="footer-info">
+      <span id="remaining-count">0 tâche(s) restante(s)</span>
+      <button id="clear-completed">Supprimer les terminées</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercice 5 – Mise en page Flexbox &amp; Grid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo">FlexGrid</span>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Articles</a>
+        <a href="#">Galerie</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- Héros -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Apprenez Flexbox &amp; CSS Grid</h1>
+        <p>Des mises en page modernes, réactives et accessibles avec CSS.</p>
+        <a href="#articles" class="btn-primary">Découvrir</a>
+      </div>
+    </section>
+
+    <!-- Grille d'articles -->
+    <section id="articles" class="articles-section">
+      <h2>Articles récents</h2>
+      <div class="articles-grid">
+        <article class="card card-featured">
+          <div class="card-image" style="background-color:#667eea;"></div>
+          <div class="card-body">
+            <span class="tag">Flexbox</span>
+            <h3>Maîtriser Flexbox en 10 minutes</h3>
+            <p>Apprenez les propriétés essentielles de Flexbox pour aligner et distribuer les éléments facilement.</p>
+            <a href="#" class="read-more">Lire la suite →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image" style="background-color:#764ba2;"></div>
+          <div class="card-body">
+            <span class="tag">CSS Grid</span>
+            <h3>Introduction à CSS Grid</h3>
+            <p>Créez des mises en page complexes en deux dimensions avec CSS Grid.</p>
+            <a href="#" class="read-more">Lire la suite →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image" style="background-color:#f093fb;"></div>
+          <div class="card-body">
+            <span class="tag">Responsive</span>
+            <h3>Design responsive avec CSS</h3>
+            <p>Adaptez vos pages à tous les écrans grâce aux media queries et aux unités flexibles.</p>
+            <a href="#" class="read-more">Lire la suite →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image" style="background-color:#4facfe;"></div>
+          <div class="card-body">
+            <span class="tag">Animations</span>
+            <h3>Animations CSS modernes</h3>
+            <p>Donnez vie à vos interfaces avec des transitions et animations CSS fluides.</p>
+            <a href="#" class="read-more">Lire la suite →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-image" style="background-color:#43e97b;"></div>
+          <div class="card-body">
+            <span class="tag">Variables CSS</span>
+            <h3>Les variables CSS personnalisées</h3>
+            <p>Utilisez les custom properties CSS pour créer des thèmes faciles à maintenir.</p>
+            <a href="#" class="read-more">Lire la suite →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Galerie d'images -->
+    <section class="gallery-section">
+      <h2>Galerie</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item tall" style="background-color:#667eea;"></div>
+        <div class="gallery-item" style="background-color:#764ba2;"></div>
+        <div class="gallery-item" style="background-color:#f093fb;"></div>
+        <div class="gallery-item wide" style="background-color:#4facfe;"></div>
+        <div class="gallery-item" style="background-color:#43e97b;"></div>
+        <div class="gallery-item" style="background-color:#f5576c;"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2024 FlexGrid. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
